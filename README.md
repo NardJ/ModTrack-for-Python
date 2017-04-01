@@ -75,9 +75,9 @@ Samples (instruments) can be internal, wav files or custom waveforms:
     songtitle                        - title of song
 
     clear (pytfilename)              - start new song, clear samples, pattern and sets filename for song
-    load (pytfilename) 		            - load song in native Modtrack format 
-    save (pytfilename) 		            - save song in native Modtrack format 
-    load_amigamodule	(modfile)       - load song in Ultimate Soundtracker and ProTracker format	
+    load (pytfilename)               - load song in native Modtrack format 
+    save (pytfilename)               - save song in native Modtrack format 
+    load_amigamodule (modfile)       - load song in Ultimate Soundtracker and ProTracker format	
     wav2sample (filename,volume,samplenr=-1) 
                                      - loads wav file, and amplifies to required volume and returns a sample (optionally set at samplenr)
     custom_waveform (usr_waveform_array, volume, samplenr, name) 
