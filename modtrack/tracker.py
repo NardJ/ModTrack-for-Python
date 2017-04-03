@@ -2054,6 +2054,8 @@ def play_pattern_inner(pattern_soundrefs=None, from_time=0):
                             nr_ended = nr_ended + 1
                 if nr_ended == 4: playing = False
             #next channel
+            #we don't want to hog CPU, so wait a bit
+            time.sleep(queue_update_interval_sec)
     #while playing
     while pygame.mixer.get_busy():
         time.sleep(queue_update_interval_sec)
